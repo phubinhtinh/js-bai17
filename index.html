@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Tập CRUD DOM: Quản Lý Sản Phẩm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Bài Tập CRUD DOM: Quản Lý Sản Phẩm</h2>
+        <div class="form-section">
+            <h3>Thêm Sản phẩm Mới</h3>
+            <input type="text" id="productName" placeholder="Tên Sản phẩm">
+            <input type="number" id="productPrice" placeholder="Giá (VND)">
+            <button id="addProductBtn">Thêm Sản phẩm</button>
+        </div>
+        <div class="list-section">
+            <h3>Danh sách Sản phẩm</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tên Sản phẩm</th>
+                        <th>Giá</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody id="productTable">
+                    <!-- Dữ liệu sản phẩm sẽ được thêm ở đây bằng JS -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
